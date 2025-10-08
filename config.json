@@ -1,0 +1,9 @@
+{
+  "window_size": [1280, 720],
+  "image_a_path": "images/a.png",
+  "image_b_path": "images/b.png",
+  "camera_id": 1,
+  "graph_update_interval_ms": 200,
+  "graph_data_points": 100,
+  "video_fps_limit": 30
+}
