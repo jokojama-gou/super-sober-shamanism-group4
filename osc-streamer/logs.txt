@@ -14382,3 +14382,44 @@ Actual value was Unreachable.
    at HeartRate.HeartRateService.InitiateDefaultCore() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 157
    at HeartRate.HeartRateService.InitiateDefault() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 71
 2025/10/08 21:53:09: HeartRateService: Found device: [Name: 808S 0046545, Id: Name: \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&__MO&HRM808S_FW&V1.0.4_c3a89d7657fc#8&34ed63a3&0&000b#{6e3bb679-4372-40c8-9eaa-4509df260cd8}]
+2025/10/08 21:53:10: HeartRateService: Service [CharacteristicProperties: Notify, UserDescription: ]
+2025/10/08 21:53:18: Started Unreachable
+2025/10/08 21:53:18: HeartRateService: InitiateDefault exception: System.ArgumentOutOfRangeException: Attempt to configure service failed.
+Parameter name: status
+Actual value was Unreachable.
+   at HeartRate.HeartRateService.InitiateDefaultCore() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 157
+   at HeartRate.HeartRateService.InitiateDefault() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 71
+2025/10/08 21:53:21: HeartRateService: Found device: [Name: 808S 0046545, Id: Name: \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&__MO&HRM808S_FW&V1.0.4_c3a89d7657fc#8&34ed63a3&0&000b#{6e3bb679-4372-40c8-9eaa-4509df260cd8}]
+2025/10/08 21:53:21: HeartRateService: Service [CharacteristicProperties: Notify, UserDescription: ]
+2025/10/08 21:53:29: Started Unreachable
+2025/10/08 21:53:29: HeartRateService: InitiateDefault exception: System.ArgumentOutOfRangeException: Attempt to configure service failed.
+Parameter name: status
+Actual value was Unreachable.
+   at HeartRate.HeartRateService.InitiateDefaultCore() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 157
+   at HeartRate.HeartRateService.InitiateDefault() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 71
+2025/10/08 21:53:32: HeartRateService: Found device: [Name: 808S 0046545, Id: Name: \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&__MO&HRM808S_FW&V1.0.4_c3a89d7657fc#8&34ed63a3&0&000b#{6e3bb679-4372-40c8-9eaa-4509df260cd8}]
+2025/10/08 21:53:32: HeartRateService: Service [CharacteristicProperties: Notify, UserDescription: ]
+2025/10/08 21:53:40: Started Unreachable
+2025/10/08 21:53:40: HeartRateService: InitiateDefault exception: System.ArgumentOutOfRangeException: Attempt to configure service failed.
+Parameter name: status
+Actual value was Unreachable.
+   at HeartRate.HeartRateService.InitiateDefaultCore() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 157
+   at HeartRate.HeartRateService.InitiateDefault() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 71
+2025/10/08 21:53:42: HeartRateService: Found device: [Name: 808S 0046545, Id: Name: \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&__MO&HRM808S_FW&V1.0.4_c3a89d7657fc#8&34ed63a3&0&000b#{6e3bb679-4372-40c8-9eaa-4509df260cd8}]
+2025/10/08 21:53:43: HeartRateService: Service [CharacteristicProperties: Notify, UserDescription: ]
+2025/10/08 21:53:51: Started Unreachable
+2025/10/08 21:53:51: HeartRateService: InitiateDefault exception: System.ArgumentOutOfRangeException: Attempt to configure service failed.
+Parameter name: status
+Actual value was Unreachable.
+   at HeartRate.HeartRateService.InitiateDefaultCore() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 157
+   at HeartRate.HeartRateService.InitiateDefault() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 71
+2025/10/08 21:53:53: HeartRateService: Found device: [Name: 808S 0046545, Id: Name: \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&__MO&HRM808S_FW&V1.0.4_c3a89d7657fc#8&34ed63a3&0&000b#{6e3bb679-4372-40c8-9eaa-4509df260cd8}]
+2025/10/08 21:53:54: HeartRateService: Service [CharacteristicProperties: Notify, UserDescription: ]
+2025/10/08 21:54:01: Started Unreachable
+2025/10/08 21:54:01: HeartRateService: InitiateDefault exception: System.ArgumentOutOfRangeException: Attempt to configure service failed.
+Parameter name: status
+Actual value was Unreachable.
+   at HeartRate.HeartRateService.InitiateDefaultCore() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 157
+   at HeartRate.HeartRateService.InitiateDefault() in C:\Users\OwO\Source\Repos\HeartRate\src\HeartRate\HeartRateService.cs:line 71
+2025/10/08 21:54:04: HeartRateService: Found device: [Name: 808S 0046545, Id: Name: \\?\BTHLEDevice#{0000180d-0000-1000-8000-00805f9b34fb}_Dev_MA&__MO&HRM808S_FW&V1.0.4_c3a89d7657fc#8&34ed63a3&0&000b#{6e3bb679-4372-40c8-9eaa-4509df260cd8}]
+2025/10/08 21:54:04: HeartRateService: Service [CharacteristicProperties: Notify, UserDescription: ]
