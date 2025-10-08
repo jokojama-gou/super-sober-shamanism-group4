@@ -14,6 +14,18 @@ from PyQt5.QtGui import QPixmap, QImage
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
+
+
+#from pythonosc.dispatcher import Dispatcher
+#from pythonosc import osc_server
+#from rich import print # あなたが使っていたrichライブラリを反映
+
+
+
+
+
+
+
 # FR4: Matplotlib CanvasをPyQtウィジェットに組み込む
 class MplCanvas(FigureCanvas):
     """MatplotlibのグラフをPyQtウィジェットとして扱うためのカスタムクラス"""

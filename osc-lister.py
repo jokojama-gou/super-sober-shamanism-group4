@@ -2,6 +2,8 @@
 自分へのメモ
 
 
+没になるかも～～
+
 Mocopiのデータをこのpyhonコードであつかいます。
 
 mocopiを、ipadにつなげます。そのipadを有線でwindowsに接続します。
