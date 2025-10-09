@@ -24,7 +24,7 @@ def forwarded_heart_rate_handler(address, *args):
     bpm = args[0] if args else "N/A"
     
     # 受信したデータを表示
-    print(f"❤️  [bold magenta]受信完了:[/bold magenta] [cyan]{bpm}[/cyan] BPM (from {address})")
+    print(f"❤️  [bold magenta]受信完了:[/bold magenta] [cyan]{bpm}[/cyan] BPM (from {address})🫀")
 
 if __name__ == "__main__":
     # --- ポート番号を引数から取得する処理 ---
