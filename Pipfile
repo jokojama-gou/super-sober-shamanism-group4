@@ -12,6 +12,7 @@ matplotlib = "*"
 bleak = "*"
 python-osc = "*"
 mediapipe = "*"
+redis = "*"
 
 [dev-packages]
 
