@@ -4,31 +4,18 @@ from pythonosc.dispatcher import Dispatcher
 from pythonosc import osc_server
 from rich import print
 import socket # 自分のIPアドレスを取得するために使用
+import sys # コマンドライン引数を受け取るために追加
 
 # =======================================================
 # ⚠️ ここをデータを受信するPCのIPアドレスとポートに設定
 # =======================================================
-# 'udp-forwarder.py'のTARGET_IPとTARGET_PORTと一致させる必要があります
 
-# IPアドレスを自動で取得する場合 (推奨)
-# try:
-#     # ローカルネットワーク上のIPアドレスを取得
-#     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-#     s.connect(("8.8.8.8", 80)) # GoogleのDNSサーバーに接続を試みる
-#     LISTEN_IP = s.getsockname()[0]
-#     s.close()
-# except Exception:
-#     # 取得できない場合は '0.0.0.0' を使う
-#     LISTEN_IP = "0.0.0.0"
+# IPアドレスの設定
+# ほとんどの場合、これで動作します
+LISTEN_IP = "0.0.0.0" 
 
-# IPアドレスを手動で設定する場合 (例: 193.168.1.100)
-LISTEN_IP = "0.0.0.0" # フォワーダー側のTARGET_IPと同じIPアドレス
-
-# もし特定のIPでうまくいかない場合は、'0.0.0.0'を試してください
-# '0.0.0.0'は、このPCで利用可能なすべてのネットワークインターフェースで待機するという意味です
-# LISTEN_IP = "0.0.0.0" 
-
-LISTEN_PORT = 9001          # フォワーダー側のTARGET_PORTと同じポート番号
+# ポート番号はコマンドライン引数から取得するように変更
+# LISTEN_PORT の固定値設定を削除
 
 def forwarded_heart_rate_handler(address, *args):
     """転送されてきた心拍数データを受信して表示する関数"""
@@ -40,11 +27,26 @@ def forwarded_heart_rate_handler(address, *args):
     print(f"❤️  [bold magenta]受信完了:[/bold magenta] [cyan]{bpm}[/cyan] BPM (from {address})")
 
 if __name__ == "__main__":
+    # --- ポート番号を引数から取得する処理 ---
+    if len(sys.argv) < 2:
+        # 引数が指定されていない場合はエラーメッセージを表示し、終了
+        # デフォルト値を持たせることも可能ですが、ここでは引数必須とします。
+        print("[bold red]エラー:[/bold red] 待ち受けポート番号を引数として指定してください。")
+        print(f"使用方法: [yellow]python {sys.argv[0]} <ポート番号>[/yellow]")
+        sys.exit(1)
+        
+    try:
+        # 1つ目の引数をポート番号として取得し、整数に変換
+        LISTEN_PORT = int(sys.argv[1])
+    except ValueError:
+        print("[bold red]エラー:[/bold red] ポート番号は整数である必要があります。")
+        sys.exit(1)
+    # ------------------------------------------
+
     # ディスパッチャーを初期化
     dispatcher = Dispatcher()
     
     # 受信するOSCアドレスと、それを処理する関数をマッピング
-    # フォワーダーは元のアドレスをそのまま転送するので、アドレスは同じ
     dispatcher.map("/avatar/parameters/HeartRateBPM", forwarded_heart_rate_handler)
 
     # OSCサーバーを起動
