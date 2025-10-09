@@ -11,13 +11,13 @@ def heart_rate_handler(address, *args):
     bpm = args[0] if args else "N/A"
     
     # richの機能を使ってきれいに表示
-    print(f"❤️  [bold green]Received Heart Rate:[/] [cyan]{bpm}[/] BPM")
+    print(f"❤️  [bold green]Received Heart Rate:[/] [cyan]{bpm}[/] BPM🫀")
 
 
 if __name__ == "__main__":
     # IPとポートの設定
     ip = "127.0.0.1" 
-    port = 9000
+    port = 9010
 
     # ディスパッチャーの準備
     dispatcher = Dispatcher()
