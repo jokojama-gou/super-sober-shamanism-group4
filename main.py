@@ -68,7 +68,7 @@ class OSCListenerThread(QThread):
         self.config = listener_config
         self.index = listener_index
         self.server = None
-        self.last_bpm = 0.0  # ★追加: 最後に受信したBPMを保存する変数を初期化
+        self.last_bpm = 0.0  # 
 
     def run(self):
         dispatcher = Dispatcher()
@@ -83,7 +83,7 @@ class OSCListenerThread(QThread):
         
         self.server.serve_forever()
 
-    # ★変更箇所: 0を受信した場合に最後の有効値を採用するロジックに変更
+    
     def bpm_handler(self, address, *args):
         """BPMデータ受信時の処理 (0を受信した場合は最後の有効値を採用)"""
         current_bpm = args[0] if args else 0.0
@@ -124,7 +124,7 @@ class MainWindow(QMainWindow):
         self.init_threads_and_timer()
 
     def init_ui(self):
-        """4象限のUIウィジェットを初期化・配置"""
+        #4象限のUIウィジェットを初期化・配置"""
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
         grid_layout = QGridLayout(central_widget)
