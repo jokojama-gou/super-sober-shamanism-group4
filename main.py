@@ -15,9 +15,7 @@ from matplotlib.figure import Figure
 from pythonosc.dispatcher import Dispatcher
 from pythonosc import osc_server
 
-# ==============================================================================
-# FR1: アプリケーションの統合 - Matplotlib, Video, OSCのクラスを1つのファイルに集約
-# ==============================================================================
+
 
 class MplCanvas(FigureCanvas):
     """MatplotlibのグラフをPyQtウィジェットとして扱うためのカスタムクラス"""
@@ -148,7 +146,7 @@ class MainWindow(QMainWindow):
         self.video_label.setAlignment(Qt.AlignCenter)
         self.video_label.setStyleSheet("background-color: #000; color: #FFF;")
         grid_layout.addWidget(self.video_label, 1, 1)
-
+        
     def init_graph_data(self):
         """グラフ用のデータ配列とプロットを初期化"""
         data_points = self.config['graph_data_points']
