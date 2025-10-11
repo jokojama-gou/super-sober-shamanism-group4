@@ -1,7 +1,7 @@
 {
   "window_size": [1280, 720],
-  "image_a_path": "images/a.png",
-  "image_b_path": "images/b.png",
+  "image_a_path": "images/b.png",
+  "image_b_path": "images/a.png",
   "camera_id": 2,
   "commet_camera_id":"3で、同じネットワークでdroid camが起動。1でパソコンの内カメ📹️。",
   "video_fps_limit": 30,
